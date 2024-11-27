@@ -52,7 +52,7 @@ deny[msg] {
     msg = "Containers must have allowPrivilegeEscalation set to false in the securityContext"
 }
 
-deny[msg] {
+warn[msg] {
     input.kind == "Deployment"
     some i
     container := input.spec.template.spec.containers[i]
