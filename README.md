@@ -5,9 +5,11 @@
 
 The repository is organized into the following directories:
 
-## **Docker/**
+### **Docker/**
   Contains policies for validating Dockerfiles, such as:
   - Preventing the `USER` instruction from being set to `root`.
+
+---
 
 ### **Kubernetes/**
 
@@ -42,6 +44,7 @@ The `Kubernetes/` directory contains policies for validating Kubernetes manifest
 
 - **Disable Automatic Mounting of Service Account Tokens**:
   - Requires `automountServiceAccountToken` to be set to `false`, reducing the risk of token misuse.
+---
 
 ### Purpose
 These policies ensure that Kubernetes workloads are deployed securely, following industry best practices. They help to:
